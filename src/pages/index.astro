@@ -1,0 +1,254 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://charterbusdc.onrender.com#website",
+      "url": "https://charterbusdc.onrender.com",
+      "name": "CharterBus DC - Diplomatic Delegations & Embassy Protocol Transport",
+      "description": "Secure motorcoach transportation and protocol motorcade coordination for Washington DC embassies, bilateral diplomatic summits, and State Department delegations."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://charterbusdc.onrender.com/#service",
+      "serviceType": "Diplomatic & Embassy Protocol Transportation",
+      "name": "Washington DC Diplomatic Charter Bus Rentals",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "VIP Charter Bus Rentals (Diplomatic & Protocol Division)",
+        "telephone": "+15712762316",
+        "url": "https://charterbusdc.onrender.com/operators/vip-charter-bus-rentals/"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Washington, DC"
+      },
+      "description": "Vetted diplomatic motorcoach dispatch, Embassy Row chancery transfers, World Bank/IMF summit flotillas, and IAD/DCA tarmac escorts."
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Washington DC Diplomatic & Embassy Charter Bus Rentals | Protocol Motorcades"
+  description="Secure motorcoach transportation and protocol motorcade coordination for Washington DC embassies, bilateral diplomatic summits, World Bank/IMF meetings, and State Department delegations."
+  canonical="https://charterbusdc.onrender.com/"
+  schema={schema}
+>
+  <!-- Hero -->
+  <section class="relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white py-24 lg:py-32 overflow-hidden border-b border-slate-800">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-mono font-bold uppercase tracking-wider mb-8">
+        ★ Diplomatic Security &amp; Protocol Motorcade Transport
+      </div>
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight">
+        Washington DC <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500">Diplomatic &amp; Embassy</span> Charter Bus Fleet
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Discreet, secure, and punctual motorcoach transportation for foreign embassy delegations, bilateral ministerial summits, World Bank/IMF meetings, and State Department protocol staging.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#calculator" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-base shadow-lg transition-all">
+          Estimate Diplomatic Motorcade Rates &rarr;
+        </a>
+        <a href="tel:+15712762316" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-300 font-bold text-base border border-slate-700 transition-all">
+          Protocol Desk: (571) 276-2316
+        </a>
+      </div>
+
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto border-t border-slate-800 pt-10 text-left">
+        <div>
+          <div class="text-3xl font-extrabold text-amber-400 font-mono">175+</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Embassies Served</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white font-mono">NDA</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Vetted Chauffeurs</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-amber-400 font-mono">IAD &bull; DCA</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Tarmac Protocol Access</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white font-mono">$10M</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Diplomatic Liability</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Protocol Services -->
+  <section id="services" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-amber-700 mb-2">Diplomatic Capabilities</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Embassy &amp; Protocol Motorcade Logistics</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-slate-900 text-amber-400 font-bold flex items-center justify-center mb-4">01</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Embassy Row Transfers</h4>
+          <p class="text-sm text-slate-600">Discrete chancery-to-hotel shuttles along Massachusetts Avenue NW and Kalorama diplomatic corridors.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-slate-900 text-amber-400 font-bold flex items-center justify-center mb-4">02</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">International Summits</h4>
+          <p class="text-sm text-slate-600">Multi-bus staging for World Bank Group, International Monetary Fund (IMF), and bilateral trade summits.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-slate-900 text-amber-400 font-bold flex items-center justify-center mb-4">03</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Tarmac &amp; FBO Escorts</h4>
+          <p class="text-sm text-slate-600">Dulles International (IAD) and Reagan National (DCA) private hangar/FBO tarmac transfers with customs coordination.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-slate-900 text-amber-400 font-bold flex items-center justify-center mb-4">04</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">State Dept &amp; NGO Delegations</h4>
+          <p class="text-sm text-slate-600">Secure movement between Foggy Bottom, Capitol Hill, think tanks, and Georgetown bilateral venues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dedicated Operator Section -->
+  <section id="operators" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-amber-500/20 text-amber-400 text-xs font-mono font-bold mb-4">
+            VERIFIED PROTOCOL OPERATOR
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">
+            VIP Charter Bus Rentals &bull; Diplomatic &amp; Protocol Division
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Washington DC's leading provider of secure, tinted executive motorcoaches. Vetted professional chauffeurs, non-disclosure compliance, Title 20 DCMR 3-minute anti-idling permits, and $10,000,000 in comprehensive commercial liability coverage.
+          </p>
+          <div class="flex flex-wrap gap-4 text-xs font-mono text-slate-400">
+            <span>&bull; Massachusetts Ave NW Chancery Staging</span>
+            <span>&bull; IAD/DCA FBO Tarmac Badging</span>
+            <span>&bull; 24/7 Diplomatic Dispatch</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3 w-full lg:w-auto">
+          <a href="/operators/vip-charter-bus-rentals/" class="px-6 py-3.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-sm text-center transition-colors">
+            View Protocol Operator Profile &rarr;
+          </a>
+          <a href="tel:+15712762316" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-sm text-center border border-slate-700 transition-colors">
+            Direct Line: (571) 276-2316
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Motorcade Calculator -->
+  <section id="calculator" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="text-amber-700 text-xs font-bold uppercase tracking-wider font-mono mb-2 block">Protocol Budget Estimator</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">DC Diplomatic Motorcade Rate Calculator</h2>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">Protocol Assignment Type</label>
+              <select id="dcMission" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden">
+                <option value="chancery">Embassy Chancery Standby &amp; Transfer</option>
+                <option value="summit">Multi-Day Bilateral Ministerial Summit</option>
+                <option value="tarmac">IAD/DCA Private Jet Tarmac Protocol Escort</option>
+                <option value="flotilla">Full-Day Escorted Diplomatic Flotilla</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">Vehicle Class</label>
+              <select id="dcVehicle" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden">
+                <option value="56">56-Pax Black Executive Motorcoach (Tinted Privacy)</option>
+                <option value="38">38-Pax Luxury Diplomatic Minicoach</option>
+                <option value="14">14-Pax Executive Sprinter Mobile Conference Room</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">Duration / Service Hours</label>
+              <div class="flex items-center gap-4">
+                <input type="range" id="dcHours" min="5" max="14" value="8" class="w-full accent-amber-500">
+                <span id="dcHoursVal" class="font-mono text-lg font-bold text-amber-400 w-16 text-right">8 Hours</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/90 rounded-2xl p-6 border border-slate-700/60 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-mono uppercase text-slate-400 tracking-wider">Estimated Protocol Rate</span>
+              <div class="mt-4 flex items-baseline gap-2">
+                <span id="dcRateTotal" class="text-4xl sm:text-5xl font-black text-amber-400 font-mono">$1,850</span>
+                <span class="text-xs text-slate-400 uppercase font-mono">est. mission</span>
+              </div>
+
+              <div class="mt-6 space-y-2 text-xs text-slate-300 border-t border-slate-700/60 pt-4">
+                <div class="flex justify-between">
+                  <span>NDA-Cleared Protocol Chauffeur:</span>
+                  <span class="text-amber-400 font-bold">Certified</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Title 20 DCMR Anti-Idling Permit:</span>
+                  <span class="text-amber-400 font-bold">Included</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Diplomatic Tarmac Coordination:</span>
+                  <span class="text-amber-400 font-bold">Standard</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-700">
+              <a href="tel:+15712762316" class="w-full py-3.5 px-4 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-sm text-center block transition-colors">
+                Book Protocol Desk: (571) 276-2316
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const dcMission = document.getElementById('dcMission');
+    const dcVehicle = document.getElementById('dcVehicle');
+    const dcHours = document.getElementById('dcHours');
+    const dcHoursVal = document.getElementById('dcHoursVal');
+    const dcRateTotal = document.getElementById('dcRateTotal');
+
+    const hourlyRates = {
+      "56": 230,
+      "38": 190,
+      "14": 150
+    };
+
+    function updateDc() {
+      const hrs = parseInt(dcHours.value, 10);
+      dcHoursVal.textContent = `${hrs} Hours`;
+      const baseHourly = hourlyRates[dcVehicle.value] || 230;
+      const mult = dcMission.value === 'tarmac' ? 1.25 : (dcMission.value === 'flotilla' ? 1.15 : 1.0);
+      const total = Math.round(baseHourly * hrs * mult);
+      dcRateTotal.textContent = `$${total.toLocaleString()}`;
+    }
+
+    dcMission?.addEventListener('change', updateDc);
+    dcVehicle?.addEventListener('change', updateDc);
+    dcHours?.addEventListener('input', updateDc);
+    updateDc();
+  </script>
+</BaseLayout>

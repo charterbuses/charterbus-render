@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: 'vip-charter-bus-rentals' } }
+  ];
+}
+
+const operator = {
+  name: "VIP Charter Bus Rentals (Washington D.C. Diplomatic & Protocol Division)",
+  slug: "vip-charter-bus-rentals",
+  phone: "(571) 276-2316",
+  phoneRaw: "+15712762316",
+  location: "Washington, DC & Northern Virginia",
+  liability: "$10,000,000 Combined Single Limit",
+  fleet: ["56-Pax MCI J4500 Black Executive Motorcoach", "38-Pax Temsa Executive Minicoach", "14-Pax Mercedes Sprinter VIP Mobile Office"],
+  specialization: "Diplomatic Delegations, Embassy Row Protocol, Bilateral State Summits & IAD/DCA Tarmac Escorts",
+  certifications: ["USDOT #2849102", "MC-958201", "FMCSA Satisfactory Safety Rating", "Title 20 DCMR § 900 Anti-Idling Compliant"]
+};
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://charterbusdc.onrender.com/operators/vip-charter-bus-rentals/#business",
+      "name": operator.name,
+      "telephone": operator.phoneRaw,
+      "url": "https://charterbusdc.onrender.com/operators/vip-charter-bus-rentals/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Washington",
+        "addressRegion": "DC",
+        "addressCountry": "US"
+      },
+      "description": "Washington DC diplomatic motorcoach operator providing protocol motorcades for embassies, bilateral summits, and airport tarmac VIP customs."
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title={`${operator.name} | DC Diplomatic Protocol Charter Buses`}
+  description="Verified operator profile for VIP Charter Bus Rentals Diplomatic & Protocol Division. Embassy Row motorcades, bilateral summits, and vetted drivers in Washington DC."
+  canonical="https://charterbusdc.onrender.com/operators/vip-charter-bus-rentals/"
+  schema={schema}
+>
+  <div class="py-16 bg-slate-900 text-white border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-xs font-mono font-bold uppercase tracking-wider text-amber-400 mb-2">
+        <a href="/" class="hover:underline">&larr; Back to DC Protocol Hub</a>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">{operator.name}</h1>
+      <p class="mt-4 text-slate-300 text-lg">
+        {operator.specialization}
+      </p>
+    </div>
+  </div>
+
+  <div class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <h2 class="text-xl font-bold text-slate-900 mb-4">Credentials &amp; Security Vetting</h2>
+          <ul class="space-y-2.5 text-sm text-slate-700 font-mono">
+            {operator.certifications.map(c => <li>&bull; {c}</li>)}
+            <li>&bull; Full Liability: {operator.liability}</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <h2 class="text-xl font-bold text-slate-900 mb-4">Diplomatic Fleet Assets</h2>
+          <ul class="space-y-2.5 text-sm text-slate-700">
+            {operator.fleet.map(f => <li>&bull; <strong class="text-slate-900">{f}</strong></li>)}
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 text-center">
+        <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">Direct Diplomatic Protocol Booking</h2>
+        <p class="text-slate-300 max-w-2xl mx-auto mb-8 text-sm">
+          Coordinate official state visits, embassy chancery shuttles, and airport tarmac VIP customs staging with our dedicated protocol dispatchers.
+        </p>
+        <a href="tel:+15712762316" class="inline-flex px-8 py-4 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-base transition-colors shadow-lg">
+          Call Protocol Desk: (571) 276-2316
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

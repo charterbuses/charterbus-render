@@ -1,0 +1,163 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  schema?: Record<string, any> | Record<string, any>[];
+  ogType?: string;
+}
+
+const {
+  title,
+  description,
+  canonical = Astro.url.href,
+  schema,
+  ogType = 'website'
+} = Astro.props;
+
+const canonicalUrl = canonical.endsWith('/') ? canonical : `${canonical}/`;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.ico" />
+  <link rel="canonical" href={canonicalUrl}>
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:type" content={ogType}>
+  <meta property="og:url" content={canonicalUrl}>
+  <meta property="og:site_name" content="CharterBus DC - Diplomatic &amp; Embassy Protocol Dispatch">
+
+  {schema && (
+    <script type="application/ld+json" set:html={JSON.stringify(Array.isArray(schema) ? { "@context": "https://schema.org", "@graph": schema } : schema)} />
+  )}
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-amber-600 selection:text-white">
+  <!-- Protocol Dispatch Ribbon -->
+  <div class="bg-slate-950 border-b border-slate-800 text-slate-300 text-xs py-2 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+          DC EMBASSY PROTOCOL DESK
+        </span>
+        <span class="text-slate-400">Embassy Row Motorcades, Bilateral Summits &amp; Tarmac Escorts</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-mono">
+        <span>Protocol Dispatch: <a href="tel:+15712762316" class="text-amber-400 hover:text-amber-300 font-bold">(571) 276-2316</a></span>
+        <span class="text-slate-600">|</span>
+        <span class="text-slate-400">NDA-Cleared Drivers</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center font-extrabold text-xl shadow-md border border-slate-800">
+          DC
+        </div>
+        <div>
+          <div class="font-extrabold text-xl tracking-tight text-slate-900 flex items-center gap-1.5 leading-none">
+            CharterBus <span class="text-amber-600 text-xs font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 bg-amber-50 border border-amber-200/60 rounded">Protocol</span>
+          </div>
+          <p class="text-xs text-slate-500 mt-1 font-medium">Diplomatic Delegations &amp; Embassy Row Dispatch</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#services" class="hover:text-amber-600 transition-colors">Protocol Services</a>
+        <a href="#calculator" class="hover:text-amber-600 transition-colors">Motorcade Estimator</a>
+        <a href="#operators" class="hover:text-amber-600 transition-colors">Verified Operator</a>
+        <a href="#fleet" class="hover:text-amber-600 transition-colors">Executive Fleet</a>
+        <a href="#faq" class="hover:text-amber-600 transition-colors">Security FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:+15712762316" class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-400 font-semibold text-sm border border-slate-800 shadow-sm transition-all">
+          (571) 276-2316
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-amber-400 font-black text-sm">
+              DC
+            </div>
+            <span class="font-bold text-white text-lg">CharterBus DC Protocol</span>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Diplomatic motorcade coordination, bilateral summit staging, and secure delegation transport across Washington DC.
+          </p>
+          <p class="text-xs font-mono text-slate-500">
+            Diplomatic Dispatch: <a href="tel:+15712762316" class="text-amber-400 hover:underline">(571) 276-2316</a>
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase font-mono mb-4">Protocol Divisions</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">Embassy Row Bilateral Transfers</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">World Bank &amp; IMF Annual Meetings</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">IAD &amp; DCA Tarmac VIP Customs</a></li>
+            <li><a href="#services" class="hover:text-amber-400 transition-colors">State Dept Summit Staging</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase font-mono mb-4">CharterBus Network</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="https://charterbus.onrender.com" class="hover:text-amber-400 transition-colors">&larr; National Faith &amp; Parent Hub</a></li>
+            <li><a href="https://charterbusva.onrender.com" class="hover:text-amber-400 transition-colors">Virginia Military Logistics &rarr;</a></li>
+            <li><a href="https://charterbusmd.onrender.com" class="hover:text-amber-400 transition-colors">Maryland Casino Shuttles &rarr;</a></li>
+            <li><a href="/operators/vip-charter-bus-rentals/" class="text-amber-400 hover:underline">VIP Protocol Operator Profile &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase font-mono mb-4">Vetting &amp; Privacy</h4>
+          <p class="text-sm text-slate-400 mb-3">
+            Tinted executive motorcoaches, encrypted flight manifests, non-disclosure compliance, and $10,000,000 diplomatic commercial liability coverage.
+          </p>
+          <div class="p-3 rounded bg-slate-900 border border-slate-800 text-xs font-mono text-slate-300">
+            Direct Protocol Line:<br>
+            <span class="text-amber-400 font-bold">(571) 276-2316</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>&copy; {new Date().getFullYear()} CharterBus Washington DC. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="/operators/vip-charter-bus-rentals/" class="hover:text-slate-400">Verified Protocol Operator</a>
+          <span>&bull;</span>
+          <span>FMCSA &bull; Title 20 DCMR Compliant</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
