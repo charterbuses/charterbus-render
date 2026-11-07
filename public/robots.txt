@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://charterbusmd.onrender.com/sitemap-index.xml

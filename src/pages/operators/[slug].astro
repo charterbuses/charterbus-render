@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: 'vip-charter-bus-rentals' } }
+  ];
+}
+
+const operator = {
+  name: "VIP Charter Bus Rentals (Maryland Casino & Nightlife Division)",
+  slug: "vip-charter-bus-rentals",
+  phone: "(571) 276-2316",
+  phoneRaw: "+15712762316",
+  location: "Baltimore, National Harbor & Arundel Mills, MD",
+  liability: "$10,000,000 Commercial Policy",
+  fleet: ["56-Pax MCI J4500 Luxury Motorcoach", "38-Pax Executive Minicoach", "24-Pax VIP Party / Shuttle Bus"],
+  specialization: "MGM National Harbor Charters, Live! Casino Maryland Shuttles, Horseshoe Baltimore Group Transit",
+  certifications: ["USDOT #2849102", "MC-958201", "FMCSA Satisfactory Safety Rating", "Maryland PSC Compliant"]
+};
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://charterbusmd.onrender.com/operators/vip-charter-bus-rentals/#business",
+      "name": operator.name,
+      "telephone": operator.phoneRaw,
+      "url": "https://charterbusmd.onrender.com/operators/vip-charter-bus-rentals/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hanover",
+        "addressRegion": "MD",
+        "addressCountry": "US"
+      },
+      "description": "Maryland casino and nightlife charter bus operator providing direct group transportation to MGM National Harbor, Live! Casino, and Horseshoe Baltimore."
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title={`${operator.name} | Maryland Casino & Nightlife Charters`}
+  description="Verified operator profile for VIP Charter Bus Rentals Casino & Nightlife Division. Group casino trips to MGM National Harbor and Live! Casino Maryland."
+  canonical="https://charterbusmd.onrender.com/operators/vip-charter-bus-rentals/"
+  schema={schema}
+>
+  <div class="py-16 bg-slate-900 text-white border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-xs font-mono font-bold uppercase tracking-wider text-purple-400 mb-2">
+        <a href="/" class="hover:underline">&larr; Back to Maryland Casino Hub</a>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">{operator.name}</h1>
+      <p class="mt-4 text-slate-300 text-lg">
+        {operator.specialization}
+      </p>
+    </div>
+  </div>
+
+  <div class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <h2 class="text-xl font-bold text-slate-900 mb-4">Credentials &amp; Staging Privileges</h2>
+          <ul class="space-y-2.5 text-sm text-slate-700 font-mono">
+            {operator.certifications.map(c => <li>&bull; {c}</li>)}
+            <li>&bull; Full Liability: {operator.liability}</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <h2 class="text-xl font-bold text-slate-900 mb-4">Casino Fleet Assets</h2>
+          <ul class="space-y-2.5 text-sm text-slate-700">
+            {operator.fleet.map(f => <li>&bull; <strong class="text-slate-900">{f}</strong></li>)}
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 text-center">
+        <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">Book Your Group Casino Run</h2>
+        <p class="text-slate-300 max-w-2xl mx-auto mb-8 text-sm">
+          Coordinate seamless group trips to MGM National Harbor, Live! Casino &amp; Hotel, or Horseshoe Baltimore with our dedicated casino dispatch team.
+        </p>
+        <a href="tel:+15712762316" class="inline-flex px-8 py-4 rounded-xl bg-purple-700 hover:bg-purple-600 text-white font-bold text-base transition-colors shadow-lg">
+          Call Casino Desk: (571) 276-2316
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

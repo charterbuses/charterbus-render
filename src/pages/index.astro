@@ -1,0 +1,255 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://charterbusmd.onrender.com#website",
+      "url": "https://charterbusmd.onrender.com",
+      "name": "CharterBus MD - Maryland Casino & Resort Nightlife Charters",
+      "description": "Group charter bus transportation to Maryland's premier gaming resorts: MGM National Harbor, Live! Casino & Hotel, and Horseshoe Baltimore."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://charterbusmd.onrender.com/#service",
+      "serviceType": "Casino & Entertainment Charter Bus Rental",
+      "name": "Maryland Casino Charter Bus Rentals",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "VIP Charter Bus Rentals (Casino & Nightlife Division)",
+        "telephone": "+15712762316",
+        "url": "https://charterbusmd.onrender.com/operators/vip-charter-bus-rentals/"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Maryland"
+      },
+      "description": "Round-trip casino charters, VIP nightlife packages, and concert group shuttles to MGM National Harbor and Live! Casino Maryland."
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Maryland Casino & Nightlife Charter Bus Rentals | MGM National Harbor & Live! Shuttles"
+  description="Group charter bus transportation to Maryland's premier casinos and entertainment resorts: MGM National Harbor, Live! Casino & Hotel, and Horseshoe Baltimore. VIP group packages, concert shuttles, and nightlife transit."
+  canonical="https://charterbusmd.onrender.com/"
+  schema={schema}
+>
+  <section class="relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white py-24 lg:py-32 overflow-hidden border-b border-slate-800">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-mono font-bold uppercase tracking-wider mb-8">
+        ★ Maryland Gaming, Concert &amp; Nightlife Transport
+      </div>
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight">
+        Maryland Casino &amp; Resort <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-amber-200 to-amber-400">Charter Bus Fleet</span>
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Effortless, luxury group transportation to MGM National Harbor, Live! Casino &amp; Hotel, and Horseshoe Baltimore. Designated motorcoach staging, VIP drop-offs, and late-night return schedules.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#calculator" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-purple-700 hover:bg-purple-600 text-white font-bold text-base shadow-lg transition-all">
+          Calculate Casino Trip Rates &rarr;
+        </a>
+        <a href="tel:+15712762316" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-300 font-bold text-base border border-slate-700 transition-all">
+          Casino Desk: (571) 276-2316
+        </a>
+      </div>
+
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto border-t border-slate-800 pt-10 text-left">
+        <div>
+          <div class="text-3xl font-extrabold text-amber-400 font-mono">MGM &bull; Live!</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Designated Bus Staging</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white font-mono">Zero Fee</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Parking Bypass</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-purple-400 font-mono">Late Night</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">24/7 Return Windows</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white font-mono">56 Pax</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Luxury Motorcoaches</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-purple-800 mb-2">Casino Corridor</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Maryland's Premier Entertainment Destinations</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-purple-950 text-amber-400 font-bold flex items-center justify-center mb-4">01</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">MGM National Harbor</h4>
+          <p class="text-sm text-slate-600">Spectacular Potomac River views, fine dining by celebrity chefs, The Theater at MGM concerts, and dedicated Plateau motorcoach parking.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-purple-950 text-amber-400 font-bold flex items-center justify-center mb-4">02</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Live! Casino &amp; Hotel</h4>
+          <p class="text-sm text-slate-600">Arundel Mills powerhouse featuring 4,000+ slots, premier poker tables, The Hall concert venue, and direct covered group entry doors.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-purple-950 text-amber-400 font-bold flex items-center justify-center mb-4">03</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Horseshoe Casino Baltimore</h4>
+          <p class="text-sm text-slate-600">Downtown Baltimore gaming entertainment adjacent to M&amp;T Bank Stadium and Camden Yards, ideal for game-day &amp; casino combos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Operator Section -->
+  <section id="operators" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-purple-500/20 text-purple-400 text-xs font-mono font-bold mb-4">
+            VERIFIED CASINO OPERATOR
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">
+            VIP Charter Bus Rentals &bull; Casino &amp; Nightlife Division
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Maryland's preferred group transportation partner for casino excursions and nightlife runs. Professional designated drivers, leather reclining seats, onboard entertainment, and guaranteed late-night return staging.
+          </p>
+          <div class="flex flex-wrap gap-4 text-xs font-mono text-slate-400">
+            <span>&bull; Direct Porte-Cochere Drop-Off</span>
+            <span>&bull; Group Incentive Packages</span>
+            <span>&bull; 24/7 Casino Weekend Dispatch</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3 w-full lg:w-auto">
+          <a href="/operators/vip-charter-bus-rentals/" class="px-6 py-3.5 rounded-xl bg-purple-700 hover:bg-purple-600 text-white font-bold text-sm text-center transition-colors">
+            View Casino Operator Profile &rarr;
+          </a>
+          <a href="tel:+15712762316" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-sm text-center border border-slate-700 transition-colors">
+            Casino Desk: (571) 276-2316
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Casino Calculator -->
+  <section id="calculator" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="text-purple-800 text-xs font-bold uppercase tracking-wider font-mono mb-2 block">Casino Budget Estimator</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Maryland Casino Trip Cost Calculator</h2>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">Casino Destination</label>
+              <select id="mdCasino" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden">
+                <option value="mgm">MGM National Harbor (Oxon Hill, MD)</option>
+                <option value="live">Live! Casino &amp; Hotel (Arundel Mills)</option>
+                <option value="horseshoe">Horseshoe Casino Baltimore</option>
+                <option value="multi">Twin Casino Run (MGM + Live! Tour)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">Vehicle Class</label>
+              <select id="mdVehicle" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden">
+                <option value="56">56-Pax Luxury Motorcoach (Restroom &amp; Wi-Fi)</option>
+                <option value="38">38-Pax Executive Minicoach</option>
+                <option value="24">24-Pax VIP Party / Shuttle Bus</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">Excursion Hours (On-Site + Travel)</label>
+              <div class="flex items-center gap-4">
+                <input type="range" id="mdHours" min="5" max="14" value="7" class="w-full accent-purple-500">
+                <span id="mdHoursVal" class="font-mono text-lg font-bold text-amber-400 w-16 text-right">7 Hours</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/90 rounded-2xl p-6 border border-slate-700/60 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-mono uppercase text-slate-400 tracking-wider">Estimated Group Cost</span>
+              <div class="mt-4 flex items-baseline gap-2">
+                <span id="mdRateTotal" class="text-4xl sm:text-5xl font-black text-amber-400 font-mono">$1,350</span>
+                <span class="text-xs text-slate-400 uppercase font-mono">est. total</span>
+              </div>
+              <div class="text-xs text-slate-400 mt-1 font-mono">
+                Approx. <span id="mdPerPerson" class="text-white font-bold">$24 - $48</span> / passenger
+              </div>
+
+              <div class="mt-6 space-y-2 text-xs text-slate-300 border-t border-slate-700/60 pt-4">
+                <div class="flex justify-between">
+                  <span>Professional Designated Driver:</span>
+                  <span class="text-amber-400 font-bold">Included</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Zero Casino Parking Fees:</span>
+                  <span class="text-amber-400 font-bold">Guaranteed</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Late-Night Pickup Guarantee:</span>
+                  <span class="text-amber-400 font-bold">Included</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-700">
+              <a href="tel:+15712762316" class="w-full py-3.5 px-4 rounded-xl bg-purple-700 hover:bg-purple-600 text-white font-bold text-sm text-center block transition-colors">
+                Book Casino Charter: (571) 276-2316
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const mdCasino = document.getElementById('mdCasino');
+    const mdVehicle = document.getElementById('mdVehicle');
+    const mdHours = document.getElementById('mdHours');
+    const mdHoursVal = document.getElementById('mdHoursVal');
+    const mdRateTotal = document.getElementById('mdRateTotal');
+    const mdPerPerson = document.getElementById('mdPerPerson');
+
+    const ratesMd = {
+      "56": 195,
+      "38": 160,
+      "24": 135
+    };
+
+    function updateMd() {
+      const h = parseInt(mdHours.value, 10);
+      mdHoursVal.textContent = `${h} Hours`;
+      const base = ratesMd[mdVehicle.value] || 195;
+      const mult = mdCasino.value === 'multi' ? 1.15 : 1.0;
+      const total = Math.round(base * h * mult);
+      mdRateTotal.textContent = `$${total.toLocaleString()}`;
+      
+      const pax = parseInt(mdVehicle.value, 10);
+      const per = Math.round(total / pax);
+      mdPerPerson.textContent = `$${per} / passenger`;
+    }
+
+    mdCasino?.addEventListener('change', updateMd);
+    mdVehicle?.addEventListener('change', updateMd);
+    mdHours?.addEventListener('input', updateMd);
+    updateMd();
+  </script>
+</BaseLayout>
