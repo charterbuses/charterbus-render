@@ -1,0 +1,253 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://charterbusva.onrender.com#website",
+      "url": "https://charterbusva.onrender.com",
+      "name": "CharterBus VA - Military & DoD Installation Troop Movements",
+      "description": "DoD-compliant military charter bus rentals in Virginia for Naval Station Norfolk, MCB Quantico, Fort Belvoir, and the Pentagon."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://charterbusva.onrender.com/#service",
+      "serviceType": "Military & DoD Troop Transport",
+      "name": "Virginia Military Charter Bus Rentals",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "VIP Charter Bus Rentals (Military & DoD Defense Division)",
+        "telephone": "+15712762316",
+        "url": "https://charterbusva.onrender.com/operators/vip-charter-bus-rentals/"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Virginia"
+      },
+      "description": "DoD troop movements, base-to-base transfers, deployment staging, and military ball transit across Virginia."
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Virginia Military & DoD Charter Bus Rentals | Base Troop Transport & Logistics"
+  description="DoD-compliant charter bus rentals for Virginia military installations: Naval Station Norfolk, MCB Quantico, Fort Belvoir, Pentagon, and Fort Gregg-Adams. Base gate clearance and oversized gear bays."
+  canonical="https://charterbusva.onrender.com/"
+  schema={schema}
+>
+  <section class="relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white py-24 lg:py-32 overflow-hidden border-b border-slate-800">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-mono font-bold uppercase tracking-wider mb-8">
+        ★ DoD-Compliant Troop Transport &amp; Base Logistics
+      </div>
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight">
+        Virginia Military &amp; Defense <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-emerald-200 to-emerald-500">Troop Transport</span> Charter Fleet
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Mission-ready motorcoach logistics for troop rotations, base-to-base transfers, field exercises, military balls, and defense contractor personnel across Virginia's primary military installations.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#calculator" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-base shadow-lg transition-all">
+          Calculate Military Transport Rates &rarr;
+        </a>
+        <a href="tel:+15712762316" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-emerald-300 font-bold text-base border border-slate-700 transition-all">
+          Military Desk: (571) 276-2316
+        </a>
+      </div>
+
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto border-t border-slate-800 pt-10 text-left">
+        <div>
+          <div class="text-3xl font-extrabold text-emerald-400 font-mono">DoD</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Safety Certified</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white font-mono">500+ cu ft</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Ruck &amp; Gear Bays</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-emerald-400 font-mono">GSA</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Contract Billing</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white font-mono">Gate Access</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Vetted REAL ID Drivers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installations Covered -->
+  <section id="installations" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-emerald-800 mb-2">Installation Coverage</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Virginia Military Installations &amp; Commands</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-emerald-950 text-emerald-300 font-bold flex items-center justify-center mb-4">01</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Naval Station Norfolk</h4>
+          <p class="text-sm text-slate-600">World's largest naval complex. Full-size 56-passenger flotillas for carrier strike group crew changes and deployment staging.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-emerald-950 text-emerald-300 font-bold flex items-center justify-center mb-4">02</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">MCB Quantico</h4>
+          <p class="text-sm text-slate-600">Crossroads of the Marine Corps. Officer Candidates School (OCS) graduation shuttles, FBI Academy details, and base-to-base links.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-emerald-950 text-emerald-300 font-bold flex items-center justify-center mb-4">03</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Fort Belvoir &amp; Pentagon</h4>
+          <p class="text-sm text-slate-600">Defense Logistics Agency and National Geospatial-Intelligence Agency inter-campus routes with high-security credentialed chauffeurs.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-emerald-950 text-emerald-300 font-bold flex items-center justify-center mb-4">04</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Joint Base Langley-Eustis</h4>
+          <p class="text-sm text-slate-600">Air Force combat command and Army transportation corps movements connecting Hampton, Newport News, and Richmond.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Operator Section -->
+  <section id="operators" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-emerald-500/20 text-emerald-400 text-xs font-mono font-bold mb-4">
+            VERIFIED DOD OPERATOR
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">
+            VIP Charter Bus Rentals &bull; Military &amp; DoD Defense Division
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Dedicated Virginia military transportation contractor. Experienced in installation security gate protocols, oversized duffel and pelican case storage, and rapid mobilization across Norfolk, Quantico, Belvoir, and the Pentagon.
+          </p>
+          <div class="flex flex-wrap gap-4 text-xs font-mono text-slate-400">
+            <span>&bull; REAL ID Credentialed Drivers</span>
+            <span>&bull; GSA Schedule Billing Supported</span>
+            <span>&bull; 24/7 Base Mobilization Desk</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3 w-full lg:w-auto">
+          <a href="/operators/vip-charter-bus-rentals/" class="px-6 py-3.5 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-sm text-center transition-colors">
+            View DoD Operator Profile &rarr;
+          </a>
+          <a href="tel:+15712762316" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-400 font-bold text-sm text-center border border-slate-700 transition-colors">
+            Military Line: (571) 276-2316
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Troop Estimator -->
+  <section id="calculator" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="text-emerald-800 text-xs font-bold uppercase tracking-wider font-mono mb-2 block">Mission Cost Estimator</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Virginia Military Movement Rate Calculator</h2>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">Operation / Movement Type</label>
+              <select id="vaMission" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden">
+                <option value="base">Base-to-Base Personnel Transfer (e.g. Norfolk &harr; Quantico)</option>
+                <option value="exercise">Battalion Field Exercise &amp; Range Transit</option>
+                <option value="ball">Military Ball &amp; Formal Dining-Out Event</option>
+                <option value="deployment">Port/Airfield Deployment Staging</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">Motorcoach Configuration</label>
+              <select id="vaVehicle" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden">
+                <option value="56">56-Pax Full Heavy Gear Motorcoach (Restroom &amp; Pass-Through Bays)</option>
+                <option value="38">38-Pax Tactical Minicoach</option>
+                <option value="24">24-Pax Personnel Shuttle</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">Mission Duration</label>
+              <div class="flex items-center gap-4">
+                <input type="range" id="vaDays" min="1" max="5" value="1" class="w-full accent-emerald-500">
+                <span id="vaDaysVal" class="font-mono text-lg font-bold text-emerald-400 w-16 text-right">1 Day</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/90 rounded-2xl p-6 border border-slate-700/60 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-mono uppercase text-slate-400 tracking-wider">Estimated Military Rate</span>
+              <div class="mt-4 flex items-baseline gap-2">
+                <span id="vaRateTotal" class="text-4xl sm:text-5xl font-black text-emerald-400 font-mono">$1,650</span>
+                <span class="text-xs text-slate-400 uppercase font-mono">est. contract</span>
+              </div>
+
+              <div class="mt-6 space-y-2 text-xs text-slate-300 border-t border-slate-700/60 pt-4">
+                <div class="flex justify-between">
+                  <span>REAL ID Base Access Chauffeur:</span>
+                  <span class="text-emerald-400 font-bold">Included</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Pass-Through Gear/Ruck Storage:</span>
+                  <span class="text-emerald-400 font-bold">Standard</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Government Billing Option:</span>
+                  <span class="text-emerald-400 font-bold">GSA Compatible</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-700">
+              <a href="tel:+15712762316" class="w-full py-3.5 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-sm text-center block transition-colors">
+                Contact Military Logistics: (571) 276-2316
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const vaMission = document.getElementById('vaMission');
+    const vaVehicle = document.getElementById('vaVehicle');
+    const vaDays = document.getElementById('vaDays');
+    const vaDaysVal = document.getElementById('vaDaysVal');
+    const vaRateTotal = document.getElementById('vaRateTotal');
+
+    const dayRates = {
+      "56": 1650,
+      "38": 1300,
+      "24": 980
+    };
+
+    function updateVa() {
+      const d = parseInt(vaDays.value, 10);
+      vaDaysVal.textContent = `${d} Day${d > 1 ? 's' : ''}`;
+      const base = dayRates[vaVehicle.value] || 1650;
+      const mult = vaMission.value === 'deployment' ? 1.2 : (vaMission.value === 'exercise' ? 1.1 : 1.0);
+      const total = Math.round(base * d * mult);
+      vaRateTotal.textContent = `$${total.toLocaleString()}`;
+    }
+
+    vaMission?.addEventListener('change', updateVa);
+    vaVehicle?.addEventListener('change', updateVa);
+    vaDays?.addEventListener('input', updateVa);
+    updateVa();
+  </script>
+</BaseLayout>

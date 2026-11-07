@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: 'vip-charter-bus-rentals' } }
+  ];
+}
+
+const operator = {
+  name: "VIP Charter Bus Rentals (Virginia Military & DoD Defense Division)",
+  slug: "vip-charter-bus-rentals",
+  phone: "(571) 276-2316",
+  phoneRaw: "+15712762316",
+  location: "Norfolk, Quantico & Northern Virginia",
+  liability: "$10,000,000 DoD Defense Policy",
+  fleet: ["56-Pax MCI Heavy Duty Tactical Motorcoach", "38-Pax Temsa Personnel Minicoach", "24-Pax Freightliner Shuttle Bus"],
+  specialization: "Troop Movements, Installation Gate Clearances, Deployment Staging & Base-to-Base Transfers",
+  certifications: ["USDOT #2849102", "MC-958201", "FMCSA Satisfactory Safety Rating", "DoD Installation Access Compliant"]
+};
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://charterbusva.onrender.com/operators/vip-charter-bus-rentals/#business",
+      "name": operator.name,
+      "telephone": operator.phoneRaw,
+      "url": "https://charterbusva.onrender.com/operators/vip-charter-bus-rentals/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Norfolk",
+        "addressRegion": "VA",
+        "addressCountry": "US"
+      },
+      "description": "Virginia military charter bus operator coordinating troop movements, installation access, and defense transit."
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title={`${operator.name} | Virginia Military & DoD Troop Charters`}
+  description="Verified operator profile for VIP Charter Bus Rentals Military & DoD Defense Division. Base-to-base troop transfers across Naval Station Norfolk, Quantico, and Fort Belvoir."
+  canonical="https://charterbusva.onrender.com/operators/vip-charter-bus-rentals/"
+  schema={schema}
+>
+  <div class="py-16 bg-slate-900 text-white border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-xs font-mono font-bold uppercase tracking-wider text-emerald-400 mb-2">
+        <a href="/" class="hover:underline">&larr; Back to Virginia Military Hub</a>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">{operator.name}</h1>
+      <p class="mt-4 text-slate-300 text-lg">
+        {operator.specialization}
+      </p>
+    </div>
+  </div>
+
+  <div class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <h2 class="text-xl font-bold text-slate-900 mb-4">Defense Vetting &amp; Gate Protocols</h2>
+          <ul class="space-y-2.5 text-sm text-slate-700 font-mono">
+            {operator.certifications.map(c => <li>&bull; {c}</li>)}
+            <li>&bull; Full Liability: {operator.liability}</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <h2 class="text-xl font-bold text-slate-900 mb-4">Tactical Motorcoach Fleet</h2>
+          <ul class="space-y-2.5 text-sm text-slate-700">
+            {operator.fleet.map(f => <li>&bull; <strong class="text-slate-900">{f}</strong></li>)}
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 text-center">
+        <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">Direct Military Logistics Coordination</h2>
+        <p class="text-slate-300 max-w-2xl mx-auto mb-8 text-sm">
+          Reserve mission-critical troop transportation, base-to-base personnel shuttles, and military ball flotillas with experienced defense dispatchers.
+        </p>
+        <a href="tel:+15712762316" class="inline-flex px-8 py-4 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-base transition-colors shadow-lg">
+          Call Military Desk: (571) 276-2316
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
