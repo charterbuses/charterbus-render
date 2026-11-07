@@ -1,0 +1,385 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://charterbus.onrender.com#website",
+      "url": "https://charterbus.onrender.com",
+      "name": "CharterBus - Church & Faith Group Charter Bus Rentals",
+      "description": "National faith-based charter bus network for church retreats, youth camps, gospel choir tours, and denominational conventions."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://charterbus.onrender.com/#service",
+      "serviceType": "Faith-Based & Church Group Transportation",
+      "name": "National Church Charter Bus Rentals",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "VIP Charter Bus Rentals (Faith & Ministry Division)",
+        "telephone": "+15712762316",
+        "url": "https://charterbus.onrender.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "description": "Nationwide charter bus rentals for church retreats, youth camps, gospel choir tours, and denominational conventions."
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Church & Faith Group Charter Bus Rentals | National Ministry Network"
+  description="Nationwide charter bus rentals for church retreats, youth camps, gospel choir tours, and denominational conventions. Vetted motorcoaches with Wi-Fi, luggage bays, and 24/7 central dispatch."
+  canonical="https://charterbus.onrender.com/"
+  schema={schema}
+>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 text-white py-24 lg:py-32 overflow-hidden border-b border-slate-800">
+    <div class="absolute inset-0 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:24px_24px] opacity-15"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-mono font-bold uppercase tracking-wider mb-8">
+        ★ Dedicated Faith &amp; Church Transportation Network
+      </div>
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight">
+        Nationwide Church &amp; Faith Group <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500">Charter Bus Rentals</span>
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Comfortable, safe, and dependable group transportation for youth summer camps, weekend retreats, choir ministry tours, and national denominational conventions.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#calculator" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-base shadow-lg shadow-amber-900/30 hover:shadow-amber-900/50 transition-all duration-200 flex items-center justify-center gap-2">
+          Calculate Church Trip Rates &rarr;
+        </a>
+        <a href="tel:+15712762316" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-base border border-slate-700 transition-all duration-200 flex items-center justify-center gap-2">
+          Call Central Dispatch: (571) 276-2316
+        </a>
+      </div>
+
+      <!-- Trust Metrics -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto border-t border-slate-800/80 pt-10 text-left">
+        <div>
+          <div class="text-3xl font-extrabold text-amber-400 font-mono">100%</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">USDOT / FMCSA Vetted</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white font-mono">56 Pax</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Full Luggage Bays</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-amber-400 font-mono">24/7</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Live Trip Support</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white font-mono">$10M</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Commercial Liability</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional Render Divisions Hub -->
+  <section id="divisions" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-amber-700 mb-2">Regional State Specializations</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Dedicated Specialized State Divisions</h3>
+        <p class="mt-4 text-slate-600">
+          Our parent hub connects congregations and national groups directly with targeted regional dispatch operations for protocol, defense, and entertainment transit.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- DC Diplomatic Division -->
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-xs hover:shadow-md transition-shadow relative flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center font-black text-xl mb-6">
+              DC
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-2">Washington DC Division</h4>
+            <div class="text-xs font-mono font-bold text-amber-600 uppercase mb-4">Diplomatic &amp; Embassy Protocol</div>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Specialized protocol motorcades for Washington's 175+ embassies, bilateral state summits, World Bank/IMF meetings, and VIP airport tarmac escorts.
+            </p>
+          </div>
+          <a href="https://charterbusdc.onrender.com" class="inline-flex items-center text-sm font-bold text-amber-700 hover:text-amber-800 gap-1.5 group">
+            Explore DC Diplomatic Fleet <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- VA Military Division -->
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-xs hover:shadow-md transition-shadow relative flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-900 text-emerald-300 flex items-center justify-center font-black text-xl mb-6">
+              VA
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-2">Virginia Division</h4>
+            <div class="text-xs font-mono font-bold text-emerald-700 uppercase mb-4">Military &amp; DoD Installation Movements</div>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              DoD-compliant troop transports for Naval Station Norfolk, MCB Quantico, Fort Belvoir, and the Pentagon. Base gate clearance and heavy gear bays.
+            </p>
+          </div>
+          <a href="https://charterbusva.onrender.com" class="inline-flex items-center text-sm font-bold text-emerald-700 hover:text-emerald-800 gap-1.5 group">
+            Explore Virginia Military Fleet <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- MD Casino Division -->
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-xs hover:shadow-md transition-shadow relative flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-900 text-amber-300 flex items-center justify-center font-black text-xl mb-6">
+              MD
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-2">Maryland Division</h4>
+            <div class="text-xs font-mono font-bold text-purple-700 uppercase mb-4">Casino &amp; Resort Entertainment Shuttles</div>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              VIP group transit and concert charters to MGM National Harbor, Live! Casino &amp; Hotel, and Horseshoe Baltimore with direct bus plateau parking.
+            </p>
+          </div>
+          <a href="https://charterbusmd.onrender.com" class="inline-flex items-center text-sm font-bold text-purple-700 hover:text-purple-800 gap-1.5 group">
+            Explore Maryland Casino Fleet <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Ministry Calculator -->
+  <section id="calculator" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="inline-block text-amber-600 text-xs font-bold uppercase tracking-wider font-mono mb-2">Ministry Budget Planner</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Church Group Charter Cost Estimator</h2>
+        <p class="text-slate-600 text-sm mt-3 max-w-xl mx-auto">
+          Calculate instant pricing estimates for youth retreats, multi-state choir tours, and denominational conventions.
+        </p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 text-white shadow-2xl relative overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Left Controls -->
+          <div class="space-y-6">
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">1. Event / Ministry Type</label>
+              <select id="eventType" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden focus:border-amber-500">
+                <option value="retreat">Weekend Youth Retreat (Camp Transit)</option>
+                <option value="choir">Gospel Choir &amp; Music Tour (Multi-City)</option>
+                <option value="convention">National Denominational Convention</option>
+                <option value="volunteer">Mission Trip &amp; Community Outreach</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">2. Preferred Vehicle Size</label>
+              <select id="busType" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden focus:border-amber-500">
+                <option value="56">56-Passenger Luxury Motorcoach (Restroom &amp; Luggage)</option>
+                <option value="38">38-Passenger Executive Minibus</option>
+                <option value="24">24-Passenger Sprinter / Shuttle Bus</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono uppercase text-slate-400 mb-2 font-bold">3. Estimated Duration (Days)</label>
+              <div class="flex items-center gap-4">
+                <input type="range" id="durationDays" min="1" max="7" value="2" class="w-full accent-amber-500">
+                <span id="durationVal" class="font-mono text-lg font-bold text-amber-400 w-12 text-right">2 Days</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Estimate Card -->
+          <div class="bg-slate-800/90 rounded-2xl p-6 border border-slate-700/60 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-mono uppercase text-slate-400 tracking-wider">Estimated Group Budget</span>
+              <div class="mt-4 flex items-baseline gap-2">
+                <span id="rateTotal" class="text-4xl sm:text-5xl font-black text-amber-400 font-mono">$3,200</span>
+                <span class="text-xs text-slate-400 uppercase font-mono">est. total</span>
+              </div>
+              <div class="text-xs text-slate-400 mt-1 font-mono">
+                Approx. <span id="perPerson" class="text-white font-bold">$28 - $57</span> / passenger
+              </div>
+
+              <div class="mt-6 space-y-2 text-xs text-slate-300 border-t border-slate-700/60 pt-4">
+                <div class="flex justify-between">
+                  <span>Professional Commercial Driver:</span>
+                  <span class="text-amber-400 font-bold">Included</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Luggage &amp; Audio Equipment Bays:</span>
+                  <span class="text-amber-400 font-bold">Complimentary</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Onboard High-Speed Wi-Fi:</span>
+                  <span class="text-amber-400 font-bold">Complimentary</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-700">
+              <a href="tel:+15712762316" class="w-full py-3.5 px-4 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-sm text-center block transition-colors shadow-md">
+                Lock In Ministry Rate: (571) 276-2316
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script for Calculator -->
+  <script is:inline>
+    const eventTypeEl = document.getElementById('eventType');
+    const busTypeEl = document.getElementById('busType');
+    const durationDaysEl = document.getElementById('durationDays');
+    const durationValEl = document.getElementById('durationVal');
+    const rateTotalEl = document.getElementById('rateTotal');
+    const perPersonEl = document.getElementById('perPerson');
+
+    const rates = {
+      "56": 1600,
+      "38": 1250,
+      "24": 950
+    };
+
+    function recalculate() {
+      const days = parseInt(durationDaysEl.value, 10);
+      durationValEl.textContent = `${days} Day${days > 1 ? 's' : ''}`;
+      const bus = busTypeEl.value;
+      const baseDaily = rates[bus] || 1600;
+      const multiplier = eventTypeEl.value === 'choir' ? 1.15 : (eventTypeEl.value === 'convention' ? 1.1 : 1.0);
+      
+      const total = Math.round(baseDaily * days * multiplier);
+      const lowTotal = Math.round(total * 0.95);
+      const highTotal = Math.round(total * 1.08);
+
+      rateTotalEl.textContent = `$${lowTotal.toLocaleString()} - $${highTotal.toLocaleString()}`;
+      
+      const pax = parseInt(bus, 10);
+      const perLow = Math.round(lowTotal / pax);
+      const perHigh = Math.round(highTotal / pax);
+      perPersonEl.textContent = `$${perLow} - $${perHigh}`;
+    }
+
+    eventTypeEl?.addEventListener('change', recalculate);
+    busTypeEl?.addEventListener('change', recalculate);
+    durationDaysEl?.addEventListener('input', recalculate);
+    recalculate();
+  </script>
+
+  <!-- Ministry Services Grid -->
+  <section id="ministries" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-amber-700 mb-2">Church Travel Solutions</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Built Specifically for Congregations &amp; Ministries</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 font-bold flex items-center justify-center mb-4">01</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Youth Camps &amp; Retreats</h4>
+          <p class="text-sm text-slate-600">Safe, monitored travel to mountain and lake camps with ample room for sleeping bags, duffels, and sports gear.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 font-bold flex items-center justify-center mb-4">02</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Gospel Choir Tours</h4>
+          <p class="text-sm text-slate-600">Spacious underfloor bays for instrument cases, robes, and sound equipment with onboard audio presentation systems.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 font-bold flex items-center justify-center mb-4">03</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">National Conventions</h4>
+          <p class="text-sm text-slate-600">Multi-bus coordinated departures connecting local churches directly to convention center arenas nationwide.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200">
+          <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 font-bold flex items-center justify-center mb-4">04</div>
+          <h4 class="font-bold text-slate-900 text-lg mb-2">Mission &amp; Outreach Trips</h4>
+          <p class="text-sm text-slate-600">Affordable, reliable transportation for disaster response mission teams, food drives, and community service crews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Specifications -->
+  <section id="fleet" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-amber-700 mb-2">Motorcoach Fleet</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Vehicles Configured for Faith Groups</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="border border-slate-200 rounded-2xl p-6 bg-slate-50/50">
+          <span class="inline-block px-2.5 py-1 rounded bg-amber-100 text-amber-800 text-xs font-mono font-bold mb-4">56-PASSENGER</span>
+          <h4 class="font-bold text-slate-900 text-xl mb-2">Full-Size Touring Coach</h4>
+          <p class="text-sm text-slate-600 mb-4">MCI J4500 &bull; Prevost H3-45</p>
+          <ul class="text-xs text-slate-600 space-y-2 border-t border-slate-200 pt-4">
+            <li>&bull; Flush onboard restroom</li>
+            <li>&bull; 500+ cu ft underfloor pass-through bays</li>
+            <li>&bull; Individual 110V power outlets &amp; USB ports</li>
+            <li>&bull; Dual-zone climate control &amp; PA system</li>
+          </ul>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl p-6 bg-slate-50/50">
+          <span class="inline-block px-2.5 py-1 rounded bg-slate-200 text-slate-800 text-xs font-mono font-bold mb-4">38-PASSENGER</span>
+          <h4 class="font-bold text-slate-900 text-xl mb-2">Executive Minicoach</h4>
+          <p class="text-sm text-slate-600 mb-4">Temsa TS35 &bull; Freightliner</p>
+          <ul class="text-xs text-slate-600 space-y-2 border-t border-slate-200 pt-4">
+            <li>&bull; Plush high-back reclining seats</li>
+            <li>&bull; Overhead parcel racks + rear luggage bay</li>
+            <li>&bull; Wi-Fi &amp; flat-panel monitor monitors</li>
+            <li>&bull; Ideal for choir sections &amp; committee trips</li>
+          </ul>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl p-6 bg-slate-50/50">
+          <span class="inline-block px-2.5 py-1 rounded bg-slate-200 text-slate-800 text-xs font-mono font-bold mb-4">24-PASSENGER</span>
+          <h4 class="font-bold text-slate-900 text-xl mb-2">Shuttle &amp; Sprinter</h4>
+          <p class="text-sm text-slate-600 mb-4">Ford Transit &bull; Mercedes Sprinter</p>
+          <ul class="text-xs text-slate-600 space-y-2 border-t border-slate-200 pt-4">
+            <li>&bull; High-roof standing clearance</li>
+            <li>&bull; Forward-facing leatherette seats</li>
+            <li>&bull; Easy boarding step for seniors</li>
+            <li>&bull; Perfect for local campus &amp; senior ministry</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-amber-700 mb-2">Common Questions</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Frequently Asked Questions by Church Coordinators</h3>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200">
+          <h4 class="font-bold text-slate-900 mb-2">Do you accommodate non-profit tax exemption for church organizations?</h4>
+          <p class="text-sm text-slate-600">Yes. If your church or ministry holds a 501(c)(3) tax exemption certificate, provide your tax ID during booking and state sales taxes will be omitted from your contract invoice.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200">
+          <h4 class="font-bold text-slate-900 mb-2">How much luggage and musical equipment can we bring?</h4>
+          <p class="text-sm text-slate-600">Full-size 56-passenger motorcoaches have over 500 cubic feet of underfloor storage, easily holding luggage, sleeping gear, drum cases, keyboards, and soundboards.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200">
+          <h4 class="font-bold text-slate-900 mb-2">How far in advance should our ministry reserve motorcoaches?</h4>
+          <p class="text-sm text-slate-600">For peak summer youth camp season (June–August) and major religious holidays (Easter, Christmas, fall retreats), we recommend reserving 6 to 12 weeks in advance to ensure preferred vehicle availability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
