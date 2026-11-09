@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "mkdir -p dist && echo \x27User-agent: *\nDisallow: /\x27 > dist/robots.txt",
     "preview": "astro preview"
   },
   "dependencies": {
